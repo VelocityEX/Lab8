@@ -17,4 +17,5 @@ public class City {
     String getProvinceName(){
         return this.province;
     }
+
 }
