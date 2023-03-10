@@ -67,12 +67,12 @@ public class CustomList extends ArrayAdapter<City> {
      * @return true if the list contains the city, false otherwise
      */
     public boolean hasCity(City city) {
-//        for (City c : cities) {
-//            if (c.getCityName().equals(city.getCityName()) && c.getProvinceName().equals(city.getProvinceName())) {
-//                return true;
-//            }
-//        }
-//        return false;
+        for (City c : cities) {
+            if (c.getCityName().equals(city.getCityName()) && c.getProvinceName().equals(city.getProvinceName())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
