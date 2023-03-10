@@ -81,7 +81,7 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city the city object to remove
      * @return true if the city was removed, false otherwise
      */
-//    public boolean deleteCity(City city) {
+    public boolean deleteCity(City city) {
 //        int initialSize = cities.size();
 //        cities.remove(city);
 //        if (cities.size() < initialSize) {
@@ -89,7 +89,7 @@ public class CustomList extends ArrayAdapter<City> {
 //            return true;
 //        }
 //        return false;
-//    }
+    }
 
     /**
      * Returns the number of cities in the list.

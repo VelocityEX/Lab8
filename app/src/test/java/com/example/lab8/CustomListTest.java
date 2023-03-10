@@ -41,25 +41,25 @@ public class CustomListTest {
         assertFalse(list.hasCity(new City("Winnipeg", "MB")));
     }
 
-//    @Test
-//    public void deleteCityTest() {
-//        list = MockCityList();
-//        list.addCity(new City("Edmonton", "AB"));
-//        list.addCity(new City("Calgary", "AB"));
-//        list.addCity(new City("Vancouver", "BC"));
-//        list.addCity(new City("Toronto", "ON"));
-//        list.addCity(new City("Montreal", "QC"));
-//
-//        // Delete a city that exists in the list
-//        int listSize = list.getCount();
-//        list.deleteCity(new City("Calgary", "AB"));
-//        assertEquals(list.getCount(), listSize);
-//
-//        // Delete a city that does not exist in the list
-//        listSize = list.getCount();
-//        list.deleteCity(new City("Winnipeg", "MB"));
-//        assertEquals(list.getCount(), listSize);
-//    }
+    @Test
+    public void deleteCityTest() {
+        list = MockCityList();
+        list.addCity(new City("Edmonton", "AB"));
+        list.addCity(new City("Calgary", "AB"));
+        list.addCity(new City("Vancouver", "BC"));
+        list.addCity(new City("Toronto", "ON"));
+        list.addCity(new City("Montreal", "QC"));
+
+        // Delete a city that exists in the list
+        int listSize = list.getCount();
+        list.deleteCity(new City("Calgary", "AB"));
+        assertEquals(list.getCount(), listSize);
+
+        // Delete a city that does not exist in the list
+        listSize = list.getCount();
+        list.deleteCity(new City("Winnipeg", "MB"));
+        assertEquals(list.getCount(), listSize);
+    }
 
 //    @Test
 //    public void countCitiesTest() {
