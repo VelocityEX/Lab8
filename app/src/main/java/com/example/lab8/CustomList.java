@@ -82,13 +82,13 @@ public class CustomList extends ArrayAdapter<City> {
      * @return true if the city was removed, false otherwise
      */
     public boolean deleteCity(City city) {
-//        int initialSize = cities.size();
-//        cities.remove(city);
-//        if (cities.size() < initialSize) {
-//            notifyDataSetChanged();
-//            return true;
-//        }
-//        return false;
+        int initialSize = cities.size();
+        cities.remove(city);
+        if (cities.size() < initialSize) {
+            notifyDataSetChanged();
+            return true;
+        }
+        return false;
     }
 
     /**
